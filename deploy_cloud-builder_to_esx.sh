@@ -1,4 +1,4 @@
-  #!/bin/bash
+#!/bin/bash
 # Author: Kai Scharwies
 # Site: blog.scharwies.net
 #
@@ -65,8 +65,8 @@ if [ $(version $VAR) -ge $(version "4.1.0") ]; then
 	done
 
 	echo "Cloud Builder Management Node (${CB_VMNAME}) is now ready!"
-	
+	exit 0
 else
-	echo "This script requires ovftool 4.1.0 ..."
+	echo "This script requires ovftool 4.1.0 or higher..."
 	exit 1
 fi
