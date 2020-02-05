@@ -13,7 +13,7 @@ Param
 
 $esxcredential = Get-Credential -UserName "root" -Message "Enter root password"
 $datastorename = "datastore1"
-$esxfile = "ESXi670-201906002.zip"
+$esxfile = "ESXi670-201912001.zip"
 $filelocation = "C:\Users\Kai\Downloads\"+$esxfile
 
 foreach ($esx in $hosts.split(",")) {
