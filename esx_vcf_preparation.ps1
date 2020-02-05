@@ -19,8 +19,8 @@ $datastorename = "datastore1"
 $ntpserver = "172.16.11.1"
 $dnsserver = "172.16.11.1"
 $domainname = "rainpole.local"
-$esxfile = "ESXi670-201906002.zip"
-$esxprofile = "ESXi-6.7.0-20190604001-standard"
+$esxfile = "ESXi670-201912001.zip"
+$esxprofile = "ESXi-6.7.0-20191204001-standard"
 
 foreach ($esx in $hosts.split(",")) {
 
@@ -61,7 +61,7 @@ foreach ($esx in $hosts.split(",")) {
 
 	"##### Configuring the default port group 'VM Network' with the same VLAN ID as the 'management network'"
 
-	$mgmtpg = Get-VMHost |Get-VirtualPortGroup -Name "Management Network"
+	$mgmtpg = Get-VMHost | Get-VirtualPortGroup -Name "Management Network"
 	$vmnetpg = Get-VMHost | Get-VirtualPortGroup -Name "VM Network"
 	Set-VirtualPortGroup -VirtualPortGroup $vmnetpg -VLanId $mgmtpg.VLanId
 
