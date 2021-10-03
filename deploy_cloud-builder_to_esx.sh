@@ -5,7 +5,7 @@
 # Based on deploy_vcsa6_mgmt_to_vc.sh by:
 # Author: William Lam
 # Site: www.virtuallyghetto.com
-# Reference: http://www.virtuallyghetto.com/2015/01/ultimate-automation-guide-to-deploying-vcsa-6-0-part-4-vcenter-server-management-node.html
+# Reference: http://www.williamlam.com/2015/01/ultimate-automation-guide-to-deploying-vcsa-6-0-part-4-vcenter-server-management-node.html
 
 OVFTOOL="/Applications/VMware OVF Tool/ovftool"
 VCSA_OVA="~/Downloads/VMware-Cloud-Builder-2.2.1.0-15345960_OVF10.ova"
